@@ -1,0 +1,188 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+header{
+    width:100%;
+    height:60px;
+
+}
+header nav{
+    display: flex; /*que sea flexible en nuestra pantalla*/
+    justify-content: flex-end; /*para que se pase a la izquierda*/
+
+}
+
+header nav .nav-right-section{ /* en esta parte lo pasamos a horizontal*/
+    width: 250px;
+    height:auto;
+    display:flex;
+    list-style: none; /*para quitar los bullets*/
+    justify-content: center; /* para justificar*/
+    align-items: center; /* para alinear*/
+}
+a{
+    text-decoration: none; /*para quitar lo subrayado de los links*/
+    cursor: pointer; /* para que cuando le acerquemos el cursor se convierta en una manita*/
+}
+
+nav .nav-right-section a{
+    margin-right:25px; /*para que se separen las palabras entre si*/
+    color:black; 
+}
+
+nav .nav-right-section .menu-icon{
+    background-image: url("https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png");
+    width: 27px;
+    height:27px;
+    background-size: contain; /*se ajustara al espacio en el que está*/
+    background-position: center;
+    background-repeat: none;
+}
+
+nav .nav-right-section img{
+    border-radius: 80px; /*para redondear*/
+    margin-left: 15px; /*recorrerlo a la izquierda*/
+    width: 35px;
+    height: 35px;
+}
+
+main{
+    margin-top: 30px; /*que tan despegado de arriba*/
+    text-align: center; /*ponerlo en el centro*/
+}
+
+main .main-logo{
+    width: 350px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .main-logo img{
+    width: 310px;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .main-input{
+    width: 430px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+main .main-input-container{
+    width: 525px;
+    border-radius: 100px;
+    border: 1xp solid #dfe1e5;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+main .main-input input{
+    width: 450px;
+    height: 40px;
+    border: none;
+    outline: none;
+}
+
+main .main-input-container:hover{ /*para que se resalte cuando pases encima de el*/
+    box-shadow: 0 1px 6px 0 #20212447; /*esto va segun las manecillas del reloj*/
+}
+
+main .main-input .search-icon{
+    background-image: url('https://img.icons8.com/android/24/000000/search.png');
+    width: 16px;
+    height: 16px;
+    padding-left: 25px;
+    background-repeat: no-repeat; /* para que no aparezco dos veces*/
+    background-position: center;
+    background-size: contain; /*que se acomode al tamaño del contenedor*/
+}
+
+main .main-input .micro-icon{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png');
+    width: 18px;
+    height: 18px;
+    padding-left: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+main .main-input .cam-icon{
+    background-image: url('https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQU9EB56qp8B5qgt89OtkGpN86KFafBM7cBixk1nXOs7ukEVbJE');
+    width: 25px;
+    height: 25px;
+    padding-right: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+main .main-buttons{
+    width: 530px;
+    margin: 0 auto;
+}
+
+main .main-buttons div{ 
+    display: inline-block; /*para separarlos, que queden uno al lado del otro*/
+}
+
+main .main-buttons button{
+    height: 36px;
+    background-color: #f8f9fa;
+    border: 0;
+    font-size: 14px;
+    color: #5f6368;
+    border-radius: 6px;
+    padding: 0 15px;
+    margin-right: 12px;
+}
+
+main .main-buttons button:hover{ /*para que se resalte cuando pases encima de el*/
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 0.5px 1px 0 #000001;
+    cursor: pointer; /* para que cambie a manita*/
+}
+
+footer{
+    width: 100%;
+    height: 50px;
+    background-color: #f2f2f2;
+    position: absolute;
+    bottom: 0; /*que se vaya hasta abajo*/
+    display: grid; /*que se haga como cuadricula*/
+    grid-template-columns: 1fr 1fr; /*para separarlos*/
+    align-items: center;
+    font-size: 15px;
+    border-top: 1px solid #e4e4e4; /*la linea gris arriba del contenedor*/
+}
+
+footer ul{
+    margin: 10px;
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+}
+
+footer .footer-left{
+    justify-self: left; /* par que se separen entre si, pero en la parte de la izquierda*/
+}
+
+footer .footer-right{
+    justify-content: right; /* par que se separen entre si, pero en la parte de la derecha*/
+}
+
+footer ul li a{
+    margin: 10px;
+    color: #5f6368;
+
+}
